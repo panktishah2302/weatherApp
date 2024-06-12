@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-card .location input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  outline: none;
+  color: #000;
+}
+
+.weather-card .location button {
+  border: none;
+}
+
+.weather-card .weather-icon img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.weather-card .name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.weather-card .time {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.weather-card .temperature {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.weather-card .condition {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.weather-card .details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.weather-card .details .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-card .details .detail img {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.weather-card .details .detail div {
+  font-size: 0.9em;
+}
